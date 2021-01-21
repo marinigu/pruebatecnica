@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TransactionsWS.Models.TransactionsModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<table>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPerson)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.value)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.finalValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gmf)
+        </td>
+    </tr>
+
+    }
+
+</table>
+
+

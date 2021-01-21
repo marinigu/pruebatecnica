@@ -1,0 +1,8 @@
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\bin\Debug\netcoreapp3.1\Domain.Transactions.deps.json
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\bin\Debug\netcoreapp3.1\Domain.Transactions.dll
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\bin\Debug\netcoreapp3.1\Domain.Transactions.pdb
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\obj\Debug\netcoreapp3.1\Domain.Transactions.AssemblyInfoInputs.cache
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\obj\Debug\netcoreapp3.1\Domain.Transactions.AssemblyInfo.cs
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\obj\Debug\netcoreapp3.1\Domain.Transactions.dll
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\obj\Debug\netcoreapp3.1\Domain.Transactions.pdb
+C:\PROYECTOS\PRUEBATECNICA\Domain.Transactions\obj\Debug\netcoreapp3.1\Domain.Transactions.csprojAssemblyReference.cache

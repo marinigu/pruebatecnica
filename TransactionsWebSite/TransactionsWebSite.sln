@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{ED512EC2-9834-4BFA-804C-998FCD6E775F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAO", "DAO", "{2AAB16E8-4A27-44A3-A208-C39042F96374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DOMAIN", "DOMAIN", "{7EBFECFB-6855-4417-8CE1-80BD7803AD80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{DE85D822-61B7-4419-A95B-AC380D899B82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rest.Transactions", "..\Rest.Transactions\Rest.Transactions.csproj", "{B497CDA8-1BE4-415B-8743-8DC174A216DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dao.Transactions", "..\Dao.Transactions\Dao.Transactions.csproj", "{B298B26E-D0F2-441C-AAFE-DFFC8A62DB2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Transactions", "..\Domain.Transactions\Domain.Transactions.csproj", "{4565EC27-A01D-4728-981B-C9F82C4E7997}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TESTUNIT", "TESTUNIT", "{EDEE89A5-5F50-4079-8587-AACADDD377C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionsWS", "..\TransactionsWS\TransactionsWS.csproj", "{1BFE4067-74E7-4B15-BEB1-7834403ACA11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B497CDA8-1BE4-415B-8743-8DC174A216DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B497CDA8-1BE4-415B-8743-8DC174A216DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B497CDA8-1BE4-415B-8743-8DC174A216DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B497CDA8-1BE4-415B-8743-8DC174A216DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B298B26E-D0F2-441C-AAFE-DFFC8A62DB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B298B26E-D0F2-441C-AAFE-DFFC8A62DB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B298B26E-D0F2-441C-AAFE-DFFC8A62DB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B298B26E-D0F2-441C-AAFE-DFFC8A62DB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4565EC27-A01D-4728-981B-C9F82C4E7997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4565EC27-A01D-4728-981B-C9F82C4E7997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4565EC27-A01D-4728-981B-C9F82C4E7997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4565EC27-A01D-4728-981B-C9F82C4E7997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFE4067-74E7-4B15-BEB1-7834403ACA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFE4067-74E7-4B15-BEB1-7834403ACA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFE4067-74E7-4B15-BEB1-7834403ACA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFE4067-74E7-4B15-BEB1-7834403ACA11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B497CDA8-1BE4-415B-8743-8DC174A216DD} = {ED512EC2-9834-4BFA-804C-998FCD6E775F}
+		{B298B26E-D0F2-441C-AAFE-DFFC8A62DB2A} = {2AAB16E8-4A27-44A3-A208-C39042F96374}
+		{4565EC27-A01D-4728-981B-C9F82C4E7997} = {7EBFECFB-6855-4417-8CE1-80BD7803AD80}
+		{1BFE4067-74E7-4B15-BEB1-7834403ACA11} = {DE85D822-61B7-4419-A95B-AC380D899B82}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B9E826C-38CB-4FEA-ADDB-FD0648BC8FBF}
+	EndGlobalSection
+EndGlobal

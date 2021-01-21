@@ -1,0 +1,11 @@
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\bin\Debug\netcoreapp3.1\Dao.Transactions.deps.json
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\bin\Debug\netcoreapp3.1\Dao.Transactions.dll
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\bin\Debug\netcoreapp3.1\Dao.Transactions.pdb
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\bin\Debug\netcoreapp3.1\Domain.Transactions.dll
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\bin\Debug\netcoreapp3.1\Domain.Transactions.pdb
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\obj\Debug\netcoreapp3.1\Dao.Transactions.csprojAssemblyReference.cache
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\obj\Debug\netcoreapp3.1\Dao.Transactions.AssemblyInfoInputs.cache
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\obj\Debug\netcoreapp3.1\Dao.Transactions.AssemblyInfo.cs
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\obj\Debug\netcoreapp3.1\Dao.Transactions.csproj.CopyComplete
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\obj\Debug\netcoreapp3.1\Dao.Transactions.dll
+C:\PROYECTOS\PRUEBATECNICA\Dao.Transactions\obj\Debug\netcoreapp3.1\Dao.Transactions.pdb
