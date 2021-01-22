@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Domain.Transactions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -23,7 +24,6 @@ namespace TransactionsWS.Controllers
 
         public IActionResult Index()
         {
-            //var url = $"https://localhost:44372/weatherforecast";
             var url = $"https://localhost:44372/transact";
         
             var request = (HttpWebRequest)WebRequest.Create(url);
@@ -62,6 +62,39 @@ namespace TransactionsWS.Controllers
                 string msg = ex.Message;
                 // Handle error
             }
+            return View();
+        }
+
+        public IActionResult Retiro(TransactionsModel transac)
+        {
+            if (ModelState.IsValid)
+            {
+                TransactionDomain transaction = new TransactionDomain();
+                transaction.idPerson = string.IsNullOrEmpty(transac.idPerson) ? "0" : transac.idPerson;
+                transaction.accountNumber = string.IsNullOrEmpty(transac.accountNumber) ? "0" : transac.accountNumber;
+                transaction.accountNumberDestination = string.IsNullOrEmpty(transac.accountNumberDestination) ? "": transac.accountNumberDestination;
+                transaction.value = string.IsNullOrEmpty(transac.value) ? "0": transac.value;
+                transaction.idOperation = string.IsNullOrEmpty(transac.idOperation) ? "0" : transac.idOperation;
+
+                var url = $"https://localhost:44372/transact";
+                var request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "POST";
+                request.ContentType = "application/json";
+                request.Accept = "application/json";
+
+                using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+                {
+                    var objJson = JsonConvert.SerializeObject(transac);
+                    streamWriter.Write(objJson);
+                }
+
+                var httpResponse = (HttpWebResponse)request.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    var result = streamReader.ReadToEnd();
+                }
+            }
+
             return View();
         }
     }

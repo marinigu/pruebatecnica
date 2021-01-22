@@ -25,25 +25,39 @@ namespace Rest.Transactions.Controllers
         public List<TransactionDomain> Get()
         {
             TransactionDomain transaction = new TransactionDomain();
-            transaction.idPerson = "123";
-            transaction.accountNumber = "A";
-            transaction.accountNumberDestination = "B";
-            transaction.value = "9600000";
-            transaction.idOperation = "1";
-            string valid = ExecuteReaderIsValidTransaction(transaction);
+            transaction.idPerson = "0";
+            ////transaction.idPerson = "123";
+            ////transaction.accountNumber = "A";
+            ////transaction.accountNumberDestination = "B";
+            ////transaction.value = "9600000";
+            ////transaction.idOperation = "1";
 
-            if (valid.Equals("1"))
+            List<TransactionDomain> lst = ExecuteReaderTransaction(transaction);
+            return lst;
+        }
+
+        [HttpPost]
+        public List<TransactionDomain> Post(TransactionDomain transac)
+        {
+            TransactionDomain transaction = new TransactionDomain();
+            transaction.idPerson = transac.idPerson;
+            transaction.accountNumber = transac.accountNumber;
+            transaction.accountNumberDestination = transac.accountNumberDestination;
+            transaction.value = transac.value;
+            transaction.idOperation = transac.idOperation;
+
+            if (ModelState.IsValid)
             {
-                List<TransactionDomain> lst = ExecuteReaderTransaction(transaction);
-                ExecuteNoQueryTransaction(transaction);
-                return lst;
-            }
-            else {
-                List<TransactionDomain> lst = ExecuteReaderTransaction(transaction);
-                return lst;
+                string valid = ExecuteReaderIsValidTransaction(transaction);
+
+                if (valid.Equals("1") && !transac.value.Equals("0"))
+                {
+                    ExecuteNoQueryTransaction(transaction);
+                }
             }
 
-           // return null;
+            List<TransactionDomain> lst = ExecuteReaderTransaction(transaction);
+            return lst;
         }
 
         private List<TransactionDomain> ExecuteReaderTransaction(TransactionDomain transaction)

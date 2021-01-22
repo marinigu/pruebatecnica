@@ -110,3 +110,4 @@ C:\PROYECTOS\PRUEBATECNICA\TransactionsWS\obj\Debug\netcoreapp3.1\TransactionsWS
 C:\PROYECTOS\PRUEBATECNICA\TransactionsWS\obj\Debug\netcoreapp3.1\TransactionsWS.csproj.CopyComplete
 C:\PROYECTOS\PRUEBATECNICA\TransactionsWS\obj\Debug\netcoreapp3.1\TransactionsWS.dll
 C:\PROYECTOS\PRUEBATECNICA\TransactionsWS\obj\Debug\netcoreapp3.1\TransactionsWS.pdb
+C:\PROYECTOS\PRUEBATECNICA\TransactionsWS\obj\Debug\netcoreapp3.1\Razor\Views\Default\Retiro.cshtml.g.cs

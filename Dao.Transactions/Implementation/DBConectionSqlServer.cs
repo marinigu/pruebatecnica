@@ -49,7 +49,7 @@ namespace Dao.Transactions.Implementation
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectionString);
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
-                    using (SqlCommand command = new SqlCommand(sql,connection))
+                    using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         connection.Open();
 
@@ -143,8 +143,8 @@ namespace Dao.Transactions.Implementation
                         command.Parameters.AddWithValue("@accountNumber", transaction.accountNumber);
                         command.Parameters.AddWithValue("@operation", transaction.idOperation);
                         command.Parameters.AddWithValue("@value", transaction.value);
-                        command.Parameters.AddWithValue("@AccountNumberDestination", transaction.accountNumberDestination);
-                        
+                        command.Parameters.AddWithValue("@AccountNumberDestination", string.IsNullOrEmpty(transaction.accountNumberDestination) ? "" : transaction.accountNumberDestination);
+
 
                         using (SqlDataReader reader = command.ExecuteReader())
                         {

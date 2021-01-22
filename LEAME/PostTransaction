@@ -1,0 +1,14 @@
+{
+  "idPerson": "123",
+  "accountNumber" : "A",
+  "accountNumberDestination" : "B",
+  "value" : "9600000",
+  "idOperation" : "1"
+}
+
+
+https://localhost:44372/transact
+
+POST
+
+body, raw, json

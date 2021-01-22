@@ -1,0 +1,53 @@
+﻿@model TransactionsWS.Models.TransactionsModel
+
+@{
+    ViewData["Title"] = "Retiro";
+}
+
+<h1>Retiro</h1>
+
+<h4>TransactionsModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Retiro">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idPerson" class="control-label"></label>
+                <input asp-for="idPerson" class="form-control" />
+                <span asp-validation-for="idPerson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idOperation" class="control-label"></label>
+                <input asp-for="idOperation" class="form-control" />
+                <span asp-validation-for="idOperation" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="value" class="control-label"></label>
+                <input asp-for="value" class="form-control" />
+                <span asp-validation-for="value" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="accountNumber" class="control-label"></label>
+                <input asp-for="accountNumber" class="form-control" />
+                <span asp-validation-for="accountNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="accountNumberDestination" class="control-label"></label>
+                <input asp-for="accountNumberDestination" class="form-control" />
+                <span asp-validation-for="accountNumberDestination" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
